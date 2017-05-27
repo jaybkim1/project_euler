@@ -2,35 +2,37 @@ package problems;
 
 public class problem_one {
 
-	//10º¸´Ù ÀÛÀº ÀÚ¿¬¼ö Áß¿¡¼­ 3 ¶Ç´Â 5ÀÇ ¹è¼ö´Â 3, 5, 6, 9 ÀÌ°í, ÀÌ°ÍÀ» ¸ðµÎ ´õÇÏ¸é 23ÀÔ´Ï´Ù.
-	//1000º¸´Ù ÀÛÀº ÀÚ¿¬¼ö Áß¿¡¼­ 3 ¶Ç´Â 5ÀÇ ¹è¼ö¸¦ ¸ðµÎ ´õÇÏ¸é ¾ó¸¶ÀÏ±î¿ä?
+	//ì²«ë²ˆì§¸ ë¬¸ì œ 
+	//10ë³´ë‹¤ ìž‘ì€ ìžì—°ìˆ˜ ì¤‘ì—ì„œ 3 ë˜ëŠ” 5ì˜ ë°°ìˆ˜ëŠ” 3, 5, 6, 9 ì´ê³ , ì´ê²ƒì„ ëª¨ë‘ ë”í•˜ë©´ 23ìž…ë‹ˆë‹¤.
+	//1000ë³´ë‹¤ ìž‘ì€ ìžì—°ìˆ˜ ì¤‘ì—ì„œ 3 ë˜ëŠ” 5ì˜ ë°°ìˆ˜ë¥¼ ëª¨ë‘ ë”í•˜ë©´ ì–¼ë§ˆì¼ê¹Œìš”?
 	
 	public static void main(String[] args) {
 		
-		// O(n)
-//		int sum = 0;
+	// O(n)
+//	int sum = 0;
 //		
-//		for (int i = 3; i < 1000; i++) { // ÀÚ¿¬¼ö 100 ±îÁö for¹®À» µ¹¸°´Ù
+//	for (int i = 3; i < 1000; i++) { // ìžì—°ìˆ˜ 100 ê¹Œì§€ forë¬¸ì„ ëŒë¦°ë‹¤
 //			
-//			if (i % 3 == 0 || i % 5 == 0) { // 3 ¶Ç´Â 5ÀÇ ¹è¼öÀÎ Á¶°Ç¹®À» °É°í °è¼Ó ´õÇÑ´Ù
-//				sum += i;
-//			}
+//		if (i % 3 == 0 || i % 5 == 0) { // 3 ë˜ëŠ” 5ì˜ ë°°ìˆ˜ì¸ ì¡°ê±´ë¬¸ì„ ê±¸ê³  ê³„ì† ë”í•œë‹¤
+//			sum += i;
 //		}
-//		System.out.println(sum);
+//	}
+//	System.out.println(sum);
 		
 		
-		// O(n) = O(n/3) + O(n/5) + O(n/15)
-		int sum = 0 ;
-	    for ( int i = 3 ; i < 1000 ; i+=3 ){
-	        sum+=i;
-	    }
-	    for ( int i = 5 ; i < 1000 ; i+=5 ){
-	        sum+=i;
-	    }       
-	    for ( int i = 15 ; i < 1000 ; i+=15 ){
-	        sum-=i;
-	    }
-	    System.out.println(sum);
+	// O(n) = O(n/3) + O(n/5) + O(n/15
+	int sum = 0 ;
+		
+	for ( int i = 3 ; i < 1000 ; i+=3 ){
+	    sum+=i;
+	}
+	for ( int i = 5 ; i < 1000 ; i+=5 ){
+	    sum+=i;
+    	}       
+    	for ( int i = 15 ; i < 1000 ; i+=15 ){
+	    sum-=i;
+    	}
+    	System.out.println(sum);
 		
 	}
 
