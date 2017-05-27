@@ -2,11 +2,11 @@ package problems;
 
 public class problem_two {
 
-	// ¹®Á¦ 2 
-	// ÇÇº¸³ªÄ¡ ¼ö¿­ÀÇ °¢ Ç×Àº ¹Ù·Î ¾ÕÀÇ Ç× µÎ °³¸¦ ´õÇÑ °ÍÀÌ µË´Ï´Ù. 1°ú 2·Î ½ÃÀÛÇÏ´Â °æ¿ì ÀÌ ¼ö¿­Àº ¾Æ·¡¿Í °°½À´Ï´Ù.
+	// ë¬¸ì œ 2 
+	// í”¼ë³´ë‚˜ì¹˜ ìˆ˜ì—´ì˜ ê° í•­ì€ ë°”ë¡œ ì•žì˜ í•­ ë‘ ê°œë¥¼ ë”í•œ ê²ƒì´ ë©ë‹ˆë‹¤. 1ê³¼ 2ë¡œ ì‹œìž‘í•˜ëŠ” ê²½ìš° ì´ ìˆ˜ì—´ì€ ì•„ëž˜ì™€ ê°™ìŠµë‹ˆë‹¤.
 	// 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
-	// Â¦¼öÀÌ¸é¼­ 4¹é¸¸ ÀÌÇÏÀÎ ¸ðµç Ç×À» ´õÇÏ¸é ¾ó¸¶°¡ µË´Ï±î?
-	
+	// ì§ìˆ˜ì´ë©´ì„œ 4ë°±ë§Œ ì´í•˜ì¸ ëª¨ë“  í•­ì„ ë”í•˜ë©´ ì–¼ë§ˆê°€ ë©ë‹ˆê¹Œ?
+
 	public static void main(String[] args) {
 		
 		int sum = 0 ;
@@ -14,13 +14,13 @@ public class problem_two {
 		int b = 1;
 		int c = a + b;
 		
-		while (c < 4000000) { // 4¹é¸¸ ÀÌÇÏÀÎ ¸ðµç Ç×À» while¹®À¸·Î µ¹¸°´Ù
-			if(c%2 == 0){ // Â¦¼ö Á¶°Ç¹® 
+		while (c < 4000000) { // 4ë°±ë§Œ ì´í•˜ì¸ ëª¨ë“  í•­ì„ whileë¬¸ìœ¼ë¡œ ëŒë¦°ë‹¤
+			if(c%2 == 0){ // ì§ìˆ˜ ì¡°ê±´ë¬¸ 
 				sum = sum + c;
 			}
-			a = b; // Ã¹¹øÂ° while¹®ÀÌ µ¹¶§ if¹®¿¡ ¾È°É¸®°í a = 1ÀÌ µÈ´Ù.
-			b = c; // Ã¹¹øÂ° while¹®À» µ¹¶§ b[1] = c[1]
-			c = a + b; // Ã¹¹øÂ° while¹®À» µ¹¶§ c = a[1] + b[1], c = 2
+			a = b; // ì²«ë²ˆì§¸ whileë¬¸ì´ ëŒë•Œ ifë¬¸ì— ì•ˆê±¸ë¦¬ê³  a = 1ì´ ëœë‹¤.
+			b = c; // ì²«ë²ˆì§¸ whileë¬¸ì„ ëŒë•Œ b[1] = c[1]
+			c = a + b; // ì²«ë²ˆì§¸ whileë¬¸ì„ ëŒë•Œ c = a[1] + b[1], c = 2
 		}
 		System.out.println(sum);
 
