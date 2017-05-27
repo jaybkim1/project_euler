@@ -1,13 +1,14 @@
 import java.util.Scanner;
 
-
-public class ÇÇº¸³ªÄ¡¼ö¿­ {
+public class í”¼ë³´ë‚˜ì¹˜ìˆ˜ì—´ {
+	
+	// Fibonacci Sequence
 	
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("ÇÇº¸³ªÄ¡¼ö¿­À» ¸î°³³ª Ãâ·ÂÇÏ½Ã°Ú½À´Ï±î? ");
+		System.out.print("í”¼ë³´ë‚˜ì¹˜ ìˆ˜ë¥¼ ëª‡ê°œë‚˜ ì¶œë ¥í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ");
 		int input = sc.nextInt(); 
 		
 		for(int i=1; i<=input; i++){
@@ -15,7 +16,7 @@ public class ÇÇº¸³ªÄ¡¼ö¿­ {
 		}
 	}
 	
-	// ÇÇº¸³ªÄ¡¼ö¿­ ±¸ÇÏ´Â ¸Þ¼Òµå
+	// í”¼ë³´ë‚˜ì¹˜ìˆ˜ì—´ êµ¬í•˜ëŠ” ë©”ì†Œë“œ
 	public static int fibo(int n){
 		if (n<=1) {
 			return n;
