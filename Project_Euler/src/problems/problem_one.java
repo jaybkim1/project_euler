@@ -33,7 +33,7 @@ public class problem_one {
 	    sum-=i;
     	}
     	System.out.println(sum);
-		
+	 	
 	}
 
 }
