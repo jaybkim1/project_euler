@@ -1,7 +1,9 @@
 # Project_Euler
 
-Project Euler 에 나와있는 문제를 '자바'로 풀어보려고 합니다. 
+Algorithm Study 
 
-영어: https://projecteuler.net/
+Let's start by solving questions one by one provided from one of the well-known websites, Project Euler.
 
-한국어: http://euler.synap.co.kr/
+English: https://projecteuler.net/
+
+Korean: http://euler.synap.co.kr/
